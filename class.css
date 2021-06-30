@@ -1,0 +1,188 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.main_container {
+    height: auto;
+    width: 80%;
+    
+    background: rgb(227, 222, 235);
+    margin: 0 10%;
+    
+    color: rgb(69, 196, 147);
+    font-family: MateSC;
+    box-shadow: 0px 0px 20px #9bf6ff;
+    
+}
+.header{
+    height: 80px;
+    background: hsl(247, 68%, 64%);
+    background-image: linear-gradient(#a0f7fd , #b6deff);
+    padding: 20px;
+    font-size: 25px;
+    position: fixed;
+    top: 0px;
+    width: calc(80% - 40px);
+}
+.main {
+   
+    height: auto; 
+    width: 100%;
+    color: hsl(61, 42%, 49%);
+    margin-top: 120px;
+    clear: both;
+}
+
+.main_left {
+   
+    width: calc(75% - 10px);
+    float: right;
+    background: hsl(342, 68%, 53%);
+    padding-right: 25px;
+    border-right: 1px solid hsl(0, 34%, 58%);
+    
+}
+.main_left p {
+    
+    font-size: 30px;
+    line-height: 30px;
+    color: hsl(125, 74%, 60%);
+   
+}
+.overflow-content {
+    color: rgb(230, 44, 220) !important;
+}
+
+.main_left div, .main_right div {
+    margin: 20px;
+}
+.main_right {
+    
+    width: 25%;
+    float: right;
+    
+}
+.main_right a {
+    color: #ef476f;
+}
+.main_right ul {
+    text-align: left;
+    list-style-type: disc;
+    padding-left: 30px;
+}
+.main_left table {
+    border: 1px solid #bdb2ff;
+    margin-top: 20px;
+}
+.main_left table td, .main_left table th  {
+    border: 1px solid #bdb2ff;
+    padding: 10px;
+}
+.footer {
+    height: 50px;
+    background: #ffc6ff;
+    padding: 20px;
+    text-align: center;
+    clear: both;
+    &copy;
+}
+.share-button {
+    position: fixed;
+    top: 40%;
+    height: auto;
+    right: 0px;
+    background: #ffc6ff;
+    font-size: 20px;
+    padding: 20px 10px;
+}
+.share-icon {
+    font-size:24px;
+    color:#caffbf;
+    text-shadow:2px 2px 4px #ef476f;
+}
+.share-icon-png {
+    width: 40px;
+    height: 40px;
+}
+
+.header span {
+    position: absolute;
+    right: 30px;
+}
+
+
+.main_right > div {
+    background: #fdffb6;
+}
+.main_right > div a {
+    background: #fdffb6;
+    color: #000000;
+}
+.main_right .div-ul ~ p {
+    background: #ffc6ff;
+    margin-left: 20px;
+    margin-right: 20px;
+   
+}
+
+.overflow-content {
+    max-height: 200px;
+    max-width: 500px;
+    overflow: auto;
+    margin-top: 50px;
+}
+
+.main_left table:hover {
+    background: darkblue;
+}
+
+.main_right section div a:first-child {
+    font-size: 22px;
+}
+.box-one {
+    width: 22%;
+    float: left;
+    margin: 10px 5px!important;
+    background: white;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+
+
+@media only screen and (max-width:768px) {
+    .box-one {
+        width: 90%;
+    }
+    .main_left {
+        width: 100%;
+        padding-right: 0px;
+        border-right: 0px;
+    }
+    .main_right {
+        width: 100%;
+    }
+    .main_container {
+        width: 100%;
+        margin: 0%;
+    }
+    .header {
+        width: 100%;
+    }
+    .header span {
+        right: 50px;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+    .box-one {
+        width: 45%;
+    }
+}
+
+@media only screen and (min-width:1024px) and (max-width:1300px) {
+    .box-one {
+        width: 45%;
+    }
+}
